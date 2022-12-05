@@ -20,6 +20,12 @@
             }
         }
 
-        Console.WriteLine(elves.Max());
+        Console.WriteLine("Max Value: " + elves.Max().ToString());
+
+        elves.Sort();
+        elves.Reverse();
+        Console.WriteLine("Top three: " + elves.GetRange(0, 3).Sum().ToString());
+
+
     }
 }
